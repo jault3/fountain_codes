@@ -4,7 +4,7 @@ import argparse
 from pprint import pprint as pp
 from lt import *
 from struct import *
-import cProfile, pstats, io as StringIO
+import cProfile, pstats, io as StringIO, time
 
 BUF_SIZE=512
 
@@ -16,6 +16,7 @@ def fountain_client(ns):
   
   s.sendto(b'', (ns.host, ns.port))
   i = 0
+  print ('startTime {}'.format(time.time()))
   while bucket.unknown_blocks > 0:
     i += 1
     b, a = s.recvfrom(BUF_SIZE)
@@ -35,6 +36,7 @@ def fountain_client(ns):
   ps.print_stats()
   with open('fountain_stats.txt', 'w') as stats: 
     stats.write(s.getvalue())
+  print ('endTime {}'.format(time.time()))
 
 def fountain_server(ns):
   s = controlledSocket.ControllableSocket(0.1, 500000)
@@ -50,6 +52,7 @@ def fountain_server(ns):
     print("Server received {} bytes from {}:{}".format(len(b), a[0], a[1]))
     print("Starting fountain...")
 
+    print('startTime {}'.format(time.time()))
     while 1:
       d = next(fountain)
       s._socket.sendto(pack('!II504s', d['degree'], d['seed'], d['data']), a)

@@ -5,7 +5,7 @@ from pprint import pprint as pp
 from lt import *
 from struct import *
 import cProfile, pstats, io as StringIO
-import json
+import json, time
 
 BUF_SIZE=512
 
@@ -15,6 +15,7 @@ def tcp_client(ns):
   s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
   s.connect((ns.host, ns.port))
 
+  print ('startTime {}'.format(time.time()))
   recvd = s.recv(BUF_SIZE)
   print('receiving...')
   
@@ -34,6 +35,7 @@ def tcp_client(ns):
   ps.print_stats()
   with open('tcp_stats.txt', 'w') as stats: 
     stats.write(s.getvalue())
+  print ('endTime {}'.format(time.time()))
 
 def tcp_server(ns):
   s = controlledSocket.ControllableSocket(0.1, 500000, 'tcp')
@@ -43,6 +45,7 @@ def tcp_server(ns):
   
   print("sending...")
   with open(ns.filename, 'rb') as f:
+    print ('startTime {}'.format(time.time()))
     while True:
       buf = f.read(BUF_SIZE)
       if not buf:
@@ -50,6 +53,7 @@ def tcp_server(ns):
       conn.send(buf)
   conn.send(bytes('\0','UTF-8'))
   s._socket.close()
+  print ('endtime {}'.format(time.time()))
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
