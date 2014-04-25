@@ -1,6 +1,5 @@
 # Copyright (c) Alex Chamberlain 2012 https://github.com/alexchamberlain/socket
-import socket, controlledSocket
-import argparse
+import socket, argparse
 from pprint import pprint as pp
 from lt import *
 from struct import *
@@ -20,7 +19,6 @@ def fountain_client(ns):
   while bucket.unknown_blocks > 0:
     i += 1
     b, a = s.recvfrom(BUF_SIZE)
-    #print("Client received {} bytes from {}:{}".format(len(b), a[0], a[1]))
     degree, seed, data = unpack('!II504s', b)
     bucket.catch({'degree': degree, 'seed': seed, 'data': data})
     print("Caught {:d} droplets. There are {:d} unknown blocks.".format(i, bucket.unknown_blocks), end='\r')
@@ -39,8 +37,8 @@ def fountain_client(ns):
   print ('endTime {}'.format(time.time()))
 
 def fountain_server(ns):
-  s = controlledSocket.ControllableSocket(0.1, 500000)
-  s._socket.bind((ns.host, ns.port))
+  s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+  s.bind((ns.host, ns.port))
 
   with open(ns.filename, 'rb') as f:
     buf = f.read()
@@ -48,14 +46,14 @@ def fountain_server(ns):
   fountain = lt_encode(buf, 504)
   
   while True:
-    b, a = s._socket.recvfrom(BUF_SIZE)
+    b, a = s.recvfrom(BUF_SIZE)
     print("Server received {} bytes from {}:{}".format(len(b), a[0], a[1]))
     print("Starting fountain...")
 
     print('startTime {}'.format(time.time()))
     while 1:
       d = next(fountain)
-      s._socket.sendto(pack('!II504s', d['degree'], d['seed'], d['data']), a)
+      s.sendto(pack('!II504s', d['degree'], d['seed'], d['data']), a)
   
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()

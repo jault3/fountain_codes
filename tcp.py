@@ -1,11 +1,9 @@
 # the base for this file was fountain.py, so partial credit goes to the author of that file, specified at the top of fountain.py
-import socket, controlledSocket
-import argparse
+import socket, argparse
 from pprint import pprint as pp
 from lt import *
 from struct import *
-import cProfile, pstats, io as StringIO
-import json, time
+import cProfile, pstats, io as StringIO, time
 
 BUF_SIZE=512
 
@@ -38,10 +36,10 @@ def tcp_client(ns):
   print ('endTime {}'.format(time.time()))
 
 def tcp_server(ns):
-  s = controlledSocket.ControllableSocket(0.1, 500000, 'tcp')
-  s._socket.bind((ns.host, ns.port))
-  s._socket.listen(1)
-  conn, addr = s._socket.accept()
+  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  s.bind((ns.host, ns.port))
+  s.listen(1)
+  conn, addr = s.accept()
   
   print("sending...")
   with open(ns.filename, 'rb') as f:
@@ -52,7 +50,7 @@ def tcp_server(ns):
         break
       conn.send(buf)
   conn.send(bytes('\0','UTF-8'))
-  s._socket.close()
+  s.close()
   print ('endtime {}'.format(time.time()))
 
 if __name__ == "__main__":
