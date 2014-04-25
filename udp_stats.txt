@@ -1,0 +1,135 @@
+         3251 function calls (3226 primitive calls) in 0.015 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     1681    0.008    0.000    0.008    0.000 {method 'recv' of '_socket.socket' objects}
+        1    0.000    0.000    0.006    0.006 {method 'connect' of '_socket.socket' objects}
+        1    0.000    0.000    0.006    0.006 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/__init__.py:69(search_function)
+        1    0.000    0.000    0.006    0.006 {built-in method __import__}
+      4/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:1559(_find_and_load)
+      4/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:1509(_find_and_load_unlocked)
+     12/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:581(_check_name_wrapper)
+      2/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:1019(load_module)
+      2/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:997(load_module)
+      2/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:536(module_for_loader_wrapper)
+      2/1    0.000    0.000    0.006    0.006 <frozen importlib._bootstrap>:850(_load_module)
+      4/1    0.000    0.000    0.005    0.005 <frozen importlib._bootstrap>:305(_call_with_frames_removed)
+      2/1    0.000    0.000    0.005    0.005 {built-in method exec}
+        1    0.000    0.000    0.005    0.005 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:3(<module>)
+        1    0.000    0.000    0.004    0.004 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/re.py:212(compile)
+        1    0.000    0.000    0.004    0.004 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/re.py:268(_compile)
+        1    0.000    0.000    0.004    0.004 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:489(compile)
+        1    0.000    0.000    0.004    0.004 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:474(_code)
+        2    0.000    0.000    0.004    0.002 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:179(_compile_charset)
+        2    0.000    0.000    0.004    0.002 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:208(_optimize_charset)
+        2    0.002    0.001    0.004    0.002 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:302(_optimize_unicode)
+        1    0.000    0.000    0.003    0.003 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:365(_compile_info)
+        1    0.000    0.000    0.002    0.002 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:33(_compile)
+      512    0.001    0.000    0.001    0.000 {method 'setdefault' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:496(set_package_wrapper)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:509(set_loader_wrapper)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1126(load_module)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1473(_find_module)
+        2    0.000    0.000    0.000    0.000 {built-in method load_dynamic}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/stringprep.py:6(<module>)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1305(find_module)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1278(_get_loader)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:935(get_code)
+       11    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1352(find_loader)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedWriter' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method loads}
+        2    0.000    0.000    0.000    0.000 {built-in method print}
+        8    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:259(_mk_bitmap)
+       53    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(_path_join)
+        5    0.000    0.000    0.000    0.000 {built-in method __build_class__}
+        1    0.000    0.000    0.000    0.000 {built-in method open}
+       17    0.000    0.000    0.000    0.000 {built-in method stat}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1031(get_data)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:738(parse)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:415(cache_from_source)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/socket.py:197(close)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:353(_parse_sub)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:266(_get_module_lock)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:796(is_package)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:431(_parse)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/socket.py:193(_real_close)
+      306    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:108(_path_isfile)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:86(_path_split)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/socket.py:93(__init__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:98(_path_is_mode_type)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1144(is_package)
+       59    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:486(_verbose_message)
+       49    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'read' of '_io.FileIO' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:181(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:300(getregentry)
+       58    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:226(release)
+        9    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:185(__next)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:804(_bytes_from_bytecode)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:201(acquire)
+       22    0.000    0.000    0.000    0.000 {built-in method hasattr}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1041(path_stats)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/codecs.py:77(__new__)
+        8    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:210(get)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/__init__.py:42(normalize_encoding)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:180(__init__)
+       36    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       14    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1261(_path_importer_cache)
+       12    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1459(__exit__)
+        2    0.000    0.000    0.000    0.000 {built-in method any}
+       12    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1455(__enter__)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:142(getwidth)
+       16    0.000    0.000    0.000    0.000 {built-in method release_lock}
+       23    0.000    0.000    0.000    0.000 {built-in method isinstance}
+        2    0.000    0.000    0.000    0.000 {method 'tolist' of 'array.array' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:700(find_module)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:643(find_module)
+        9    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 {method 'rsplit' of 'str' objects}
+       11    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:34(_relax_case)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1596(_handle_fromlist)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1026(get_filename)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:61(_r_long)
+        8    0.000    0.000    0.000    0.000 {built-in method allocate_lock}
+        1    0.000    0.000    0.000    0.000 {built-in method compile}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:154(new_module)
+        8    0.000    0.000    0.000    0.000 {built-in method get_ident}
+        6    0.000    0.000    0.000    0.000 {built-in method getattr}
+       29    0.000    0.000    0.000    0.000 {built-in method len}
+        6    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:204(match)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1147(<genexpr>)
+        4    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1122(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:146(Codec)
+        2    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:471(isstring)
+        3    0.000    0.000    0.000    0.000 {built-in method is_builtin}
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+       12    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_compile.py:25(_identityfunction)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:218(IncrementalEncoder)
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x1001e14a0}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:69(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method _fix_co_filename}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:295(StreamReader)
+       12    0.000    0.000    0.000    0.000 {built-in method acquire_lock}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:147(encode)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1013(__init__)
+        4    0.000    0.000    0.000    0.000 {built-in method is_frozen}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:726(fix_flags)
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:140(append)
+        1    0.000    0.000    0.000    0.000 {built-in method setattr}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:253(IncrementalDecoder)
+        1    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/sre_parse.py:92(__init__)
+        4    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method ord}
+        1    0.000    0.000    0.000    0.000 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/encodings/idna.py:292(StreamWriter)
+        2    0.000    0.000    0.000    0.000 {method 'tobytes' of 'array.array' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method min}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:280(cb)
+
+
